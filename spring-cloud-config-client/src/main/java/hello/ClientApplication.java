@@ -19,7 +19,7 @@ public class ClientApplication {
 @RestController
 class MessageRestController {
 
-    @Value("${message:Hello default}")
+    @Value("${message:Hello edk}")
     private String message;
 
     @RequestMapping("/message")
