@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.edk.parent</groupId>
-  <artifactId>spring-cloud-ribbon-hello.user</artifactId>
+  <artifactId>spring-cloud-ribbon-consumer</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 

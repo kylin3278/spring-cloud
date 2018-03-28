@@ -1,11 +1,11 @@
 spring:
   application:
-    name: user
+    name: spring-cloud-ribbon-hello.user
 
 server:
   port: 8888
 
-say-hello:
+spring-cloud-ribbon-say.hello:
   ribbon:
     eureka:
       enabled: false
