@@ -1,4 +1,4 @@
-package hello;
+package consumer;
 
 import static org.assertj.core.api.BDDAssertions.*;
 
@@ -21,6 +21,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import consumer.UserApplication;
 
 /**
  * @author Marcin Grzejszczak

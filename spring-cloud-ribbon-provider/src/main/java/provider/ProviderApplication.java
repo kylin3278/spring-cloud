@@ -1,4 +1,4 @@
-package hello;
+package provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,9 +11,9 @@ import java.util.*;
 
 @RestController
 @SpringBootApplication
-public class SayHelloApplication {
+public class ProviderApplication {
 
-  private static Logger log = LoggerFactory.getLogger(SayHelloApplication.class);
+  private static Logger log = LoggerFactory.getLogger(ProviderApplication.class);
 
   @RequestMapping(value = "/greeting")
   public String greet() {
@@ -33,6 +33,6 @@ public class SayHelloApplication {
   }
 
   public static void main(String[] args) {
-    SpringApplication.run(SayHelloApplication.class, args);
+    SpringApplication.run(ProviderApplication.class, args);
   }
 }
