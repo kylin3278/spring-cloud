@@ -1,6 +1,6 @@
 package consumer;
 
-import static org.assertj.core.api.BDDAssertions.*;
+import static org.assertj.core.api.BDDAssertions.then;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -22,14 +22,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import consumer.UserApplication;
-
 /**
  * @author Marcin Grzejszczak
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = UserApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class UserApplicationTests {
+@SpringBootTest(classes = ConsumerApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class ConsumerApplicationTests {
 
     ConfigurableApplicationContext application1;
     ConfigurableApplicationContext application2;

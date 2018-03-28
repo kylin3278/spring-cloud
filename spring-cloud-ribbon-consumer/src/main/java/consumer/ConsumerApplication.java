@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @RestController
 @RibbonClient(name = "spring-cloud-ribbon-provider", configuration = ProviderConfiguration.class)
-public class UserApplication {
+public class ConsumerApplication {
 
 	@LoadBalanced
 	@Bean
@@ -32,6 +32,6 @@ public class UserApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(UserApplication.class, args);
+		SpringApplication.run(ConsumerApplication.class, args);
 	}
 }
