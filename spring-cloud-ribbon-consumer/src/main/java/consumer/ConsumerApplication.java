@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @RestController
-@RibbonClient(name = "spring-cloud-ribbon-provider", configuration = ProviderConfiguration.class)
+//@RibbonClient(name = "spring-cloud-ribbon-provider", configuration = ProviderConfiguration.class)
 public class ConsumerApplication {
 
 	@LoadBalanced
